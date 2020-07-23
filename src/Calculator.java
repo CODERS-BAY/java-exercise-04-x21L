@@ -69,18 +69,12 @@ public class Calculator {
     private static void calcOperationsDouble(int operation) {
         double result = 0;
         switch (operation) {
-            case 1: result = additionDouble();
-                break;
-            case 2: result = subtractionDouble();
-                break;
-            case 3: result = divideDouble();
-                break;
-            case 4: result = moduloDouble();
-                break;
-            case 5: result = pythagorasDouble();
-                break;
-            default:
-                System.out.println("Something went wrong please try again");
+            case 1 -> result = additionDouble();
+            case 2 -> result = subtractionDouble();
+            case 3 -> result = divideDouble();
+            case 4 -> result = moduloDouble();
+            case 5 -> result = pythagorasDouble();
+            default -> System.out.println("Something went wrong please try again");
         }
         System.out.println("The solution is = " + result);
     }
